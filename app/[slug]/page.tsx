@@ -28,7 +28,7 @@ export default async function BlogArticle({
   const data: fullBlog = await getData(params.slug);
 
   return (
-    <div className="flex justify-center items-center w-full min-h-screen mt-8 flex-col bg-white text-neutral-800 lg:p-0 p-8">
+    <div className="flex justify-center items-center w-full min-h-screen my-10 flex-col bg-white text-black lg:p-0 p-8 font-circular">
       <div className="flex justify-between items-center w-full lg:px-8 px-4">
         <Link href="/">
           <ArrowLeft className="lg:h-12 h-8 w-10 lg:w-16 stroke-[1]" />
@@ -39,7 +39,7 @@ export default async function BlogArticle({
         <span className="mt-8 block text-base text-center text-primary font-semibold tracking-wide uppercase underline underline-offset-2">
           nXtribe - Blog
         </span>
-        <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl">
+        <span className="mt-2 block text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl font-unbounded uppercase">
           {data.title}
         </span>
       </h1>

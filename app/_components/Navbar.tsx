@@ -3,7 +3,7 @@ import { MenuBar } from "./MenuBar";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center lg:px-8 lg:py-4 bg-black text-white">
+    <div className="flex justify-between items-center lg:px-8 px-6 py-4 bg-black text-white">
       <Logo />
       <MenuBar />
     </div>
